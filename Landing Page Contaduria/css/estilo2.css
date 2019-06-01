@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+	margin:auto;
+}
+body{
+	background:#8cfee4;
+}	
+header{
+	background:#00ab84;
+	height:auto;
+	width:100%;
+	padding:20px;
+}
+.logo{
+	text-align:center;
+	
+}
+/*Menu*/
+#slide{
+	width:100%;
+	height:auto;
+	min-height:420px;
+	background: url("../imagenes/grupo.jpg");
+	background-repeat:no-repeat;
+}
+nav{
+	background:black;
+	padding:20px;
+	width:100%;
+	opacity:0.5;
+	text-align:center;
+	height:auto;
+	padding-top:20px;
+}
+nav a{
+	color:white;
+	text-decoration:none;
+	padding:10	px; /* espacio*/
+	text-transform:uppercase;
+	font-family: "Open Sans",sans-serif;
+	margin:12px;
+	border-right:solid 1px white;
+	padding: 3px 15px;
+
+}
+/*informacion de carrera*/
+.carrera{
+	width:90%;
+	margin-top:20px;
+		background:black;
+	opacity:0.5;
+	text-align: center;
+	margin-top:20px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+.carrera h1{
+    color:white;
+    font-size: 55px;
+	font-family: "Open Sans",sans-serif;
+	
+}
+/*Contenido*/
+section{
+	padding:20px;
+	width:80%;
+	height:auto;
+	background:transparent;
+}
+/* Contenido de Perfil Profesional*/
+
+#contenido{
+	width:49%;
+	background:transparent;
+	height:auto;
+	float:left;
+	padding-right:1%;
+	text-align:center;
+	
+}
+.perfil{
+	width:auto;
+	min-height:140px;
+	height:auto;
+	margin-top:1%;
+	margin-left:1%;
+	margin-right:1%;
+	margin-bottom:1%;
+	font-family: "Open Sans",sans-serif;
+	background-image: url("../imagenes/texto.jpg");
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	/*border:solid 2px black;*/
+}
+/* Aside de ocupaciones profesionales*/
+aside{
+	width:100%;
+	background:transparent;
+	height:auto;
+	min-height:160px;
+}
+#contenidoOcupacionesProfesionales{
+	width:49%;
+	background:transparent;
+	height:auto;
+	float:left;
+	padding-right:1%;
+	text-align:center;
+	
+}
+.ocupaciones{
+	width:auto;
+	height:auto;
+	margin-top:1%;
+	margin-left:1%;
+	margin-right:1%;
+	margin-bottom:1%;
+	min-height:140px;
+	background-image: url("../imagenes/texto.jpg");
+	font-family: "Open Sans",sans-serif;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	/*border:solid 2px black;*/
+}
+/*Planes Estudios de tsu e ingenieria*/
+.planestudiosTSU{
+	width:100%;
+	overflow:hidden;
+	background:transparent;	
+	}
+#contenidoTSU{
+	width:40%;
+	margin-left:5%;
+	height:auto;
+	background-image: url("../imagenes/texto.jpg");
+	float:left;
+	/*border:solid 2px black;*/
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+.PlanesEstudiosTSU{
+	width:100%;
+	height:auto;
+	margin-top:1%;
+	margin-left:1%;
+	margin-right:1%;
+	margin-bottom:1%;
+	font-family: "Open Sans",sans-serif;
+}
+/*Contenedores de articulos*/
+.cajitas{
+	width:46%;
+	min-height:230px;
+
+	float:left;
+	padding:10px;
+	font-family: "Open Sans",sans-serif;
+	/*border:solid 2px black;*/
+}
+/*<!--galeria-->*/
+.asideGaleria{
+	width:45%;
+	height:auto;
+	float:right;
+	margin-right:5%;
+	/*border:solid 2px black;*/
+}
+.asideGaleria h2{
+	font-family: "Open Sans",sans-serif;
+	text-align:center;
+}
+.asideGaleria h1{
+color:black;
+font-size: 55px;
+font-family: "Open Sans",sans-serif;
+text-align:center;
+}
+.asideGaleria li{
+	list-style:none;
+    /* estilo de perfil personal */
+}
+.imagenes{
+	width:45%;
+	float:left;
+	padding:10px;
+	/*border:solid 2px black;*/
+}
+.imagenes img{
+	width:100%;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	
+}
+
+/*Estilos del modal*/
+
+.modal {
+    display: none;
+	
+}
+
+
+.modal:target {
+    
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	
+}
+
+.imagen a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid #fff;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.cerrar {
+    display: block;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+/*Ingenieria*/
+.planestudiosIngenieria{
+	width:100%;
+	overflow:hidden;
+	background:transparent;	
+	}
+#contenidoIngenieria{
+	width:40%;	
+	margin-left:5%;
+	height:auto;
+	background-image: url("../imagenes/texto.jpg");
+	float:left;
+	/*border:solid 2px black;*/
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+.PlanEstudiosIngenieria{
+	width:100%;
+	height:auto;
+	margin-top:1%;
+	margin-left:1%;
+	margin-right:1%;
+	margin-bottom:1%;
+	font-family: "Open Sans",sans-serif;
+}
+.cajitasIngenieria{
+	width:46%;
+	min-height:190px;
+
+	float:left;
+	padding:10px;
+	font-family: "Open Sans",sans-serif;
+}
+/*<!--Formulario llenado por el usuario-->*/
+/*INFORMACIÓN */
+.asideFormulario{
+	width:45%;
+	height:auto;
+	float:right;
+	margin-right:5%;
+	/*border:solid 2px black;*/
+}
+.asideFormulario h1{
+color:black;
+font-size: 55px;
+font-family: "Open Sans",sans-serif;
+text-align:center;
+}
+.form{
+	padding:20px;
+	width:90%;
+	/*border:solid 2px black;TIPO TAMAÑO COLOR*/
+	overflow:hidden;
+	background:#165b49;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+	float:left;
+}
+.formu{
+	width:auto;
+	height:auto;
+	min-height:600px;
+	/*border:solid 2px black;*/
+	
+}/*estilo  del formulario */
+label{
+	clear:both;
+	width:200px;
+	float:left;
+	color:white;
+	margin:10px 0 10px 0;
+	font-family: "Open Sans",sans-serif;
+	
+}
+input,textarea{
+	width:100%;
+	min-width:100%;
+	max-width:100%;
+	height:auto;
+	max-height:5px;
+	min-height:40px;
+	clear:both;
+	float:left;
+	font-family: "Open Sans",sans-serif;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;	
+}
+button{
+	clear:both;
+	float:right;
+	padding:10px;
+	background:gray;
+	margin-right:2%;
+	margin-top:20px;
+	padding:30;
+	width:200px;
+	border-radius:5px;
+	font-family: "Open Sans",sans-serif;
+    /*estilo  del formulario */
+}
+/* estilo del video de la ut */
+.vide{
+	width:100%;
+	overflow:hidden;
+	background:#00ab84;
+	}
+.vide2 h1{
+	color:black;
+	text-align:center;	
+}
+.vide2{
+	float:left;
+	width:50%;
+	margin-left:5%;
+	height:auto;
+	
+}
+.vide2 h1{
+	color:black;
+	font-size: 55px;
+	font-family: "Open Sans",sans-serif;
+	text-align:center;
+    /* estilo del video de la ut */
+}
+/*gps*/
+.gps{
+	background:transparent;
+	float:right;
+	width:35%;
+	height:auto;
+	min-height:300px;
+	margin-right:5%;
+	padding-left:1%;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}/* estilo de gps de la ut */
+.gps h1{
+	color:black;
+	font-size: 55px;
+	font-family: "Open Sans",sans-serif;
+	text-align:center;
+}
+.gps iframe{
+	width:95%;
+	height:auto;
+	min-height:400px;
+	margin-right:5%;
+		border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+/* CONTACTENOS */
+footer{
+	width:100%;
+	padding:20px;
+	background:black;
+	color:white;
+	height:auto;
+	float:left;
+	
+}
+/*<!--Contacto-->*/
+/*footer*/
+.contacto{
+	text-align: center;
+
+}
+.contacto h1{
+	font-family: "Open Sans",sans-serif;
+
+}
+
+.pie{ /* estilo del apartado del autor*/
+	float: left;
+	margin: center;
+	text-align: center;
+	width: 100%;
+
+}
+span {
+    height: 0px;
+    border-top: 2px solid rgba(52,52,52,0.1);
+    border-top-color: rgba(52, 52, 52, 0.1);
+    display: block;
+    position: relative;
+    top: 0px;
+    width: 100%;
+	background:white;
+}
+.pie p{
+	font-family: "Open Sans",sans-serif;
+	font-size: 16px;
+	color: white;
+}
+.copyR p{
+	font-family: "Open Sans",sans-serif;
+	font-size: 16px;
+	color: white;
+	float:left;
+    /* estilo del apartado del autor*/
+}
+
